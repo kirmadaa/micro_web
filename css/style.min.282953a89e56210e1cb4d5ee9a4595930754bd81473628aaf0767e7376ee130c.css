@@ -6160,19 +6160,20 @@ ol li {
     flex-direction:row
   }
 }
-.sub-footer .copyright {
+/* .sub-footer .copyright {
   margin-top:10px;
   font-size:14px
 }
 .sub-footer .copyright a {
   font-weight:700;
   color:inherit
-}
-.sub-footer .social a:first-of-type {
+} */
+/* .sub-footer .social a:first-of-type {
   margin-left:-10px
-}
+} */
 .logo {
   display:none
+  
 }
 @media(min-width:576px) {
   .logo {
@@ -6183,10 +6184,15 @@ ol li {
   display:block
 }
 .logo img {
-  width:auto
+  width: 350px;
+  height: auto; 
 }
 .logo-mobile {
   display:block
+}
+.image{
+  width: 350px;
+  height: auto;
 }
 @media(min-width:576px) {
   .logo-mobile {
@@ -6202,6 +6208,8 @@ ol li {
 .main-menu {
   display:none
 }
+
+
 @media(min-width:768px) {
   .main-menu {
     display:block
@@ -6589,32 +6597,41 @@ ol li {
   margin-top:-40px
 }
 .intro-image-absolute {
-  max-width:none;
+  max-width: 110%;
+  height: 300px;
   padding:0;
-  margin-bottom:30px
+  margin-bottom:30px;
 }
 @media(min-width:768px) {
   .intro-image-absolute {
-    position:absolute;
-    bottom:-50px;
-    left:-50px;
-    width:700px
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    width: 700px;
+    height: 400px; /* Set the desired height value */
   }
 }
+
 @media(min-width:992px) {
   .intro-image-absolute {
-    bottom:-60px;
-    left:-60px;
-    width:800px
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 800px;
+    height: 450px; /* Set the desired height value */
   }
 }
+
 @media(min-width:1300px) {
   .intro-image-absolute {
-    bottom:-100px;
-    left:-70px;
-    width:850px
+    position: absolute;
+    bottom: -100px;
+    left: -70px;
+    width: 850px;
+    height: 500px; /* Set the desired height value */
   }
 }
+
 .intro-image-hide-mobile {
   display:none
 }
@@ -6675,12 +6692,13 @@ ol li {
   display:flex;
   align-items:center;
   flex-direction:column;
-  text-align:center
+  text-align:center;
+  cursor: pointer;
 }
 .feature .feature-image {
   flex:none;
-  width:80px;
-  height:80px;
+  width:150px;
+  height:100px;
   display:flex;
   margin-bottom:20px;
   text-align:center
@@ -6693,12 +6711,19 @@ ol li {
   margin-bottom:0;
   margin-top:auto
 }
-.social {
+.a:hover{
+  text-decoration: none;
+}
+.inc{
+  width: auto;
+  height: auto;
+}
+/* .social {
   display:block
 }
 .social img {
-  width:20px;
-  height:20px
+  width:30px;
+  height:auto;
 }
 .social a {
   padding:10px;
@@ -6706,7 +6731,7 @@ ol li {
 }
 .social a:hover {
   opacity:.8
-}
+} */
 .testimonials {
   text-align:center;
   margin:16px
